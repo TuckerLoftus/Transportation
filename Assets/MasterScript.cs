@@ -9,6 +9,7 @@ public class MasterScript : MonoBehaviour {
 	public static GameObject [,] AllCubes = new GameObject[16,9] ; 
 	public static Airplane ap1 ;
 	public float turnTime = 1.5f ;
+<<<<<<< HEAD
 	public float cycleTime ;
 
 	public void CheckKeyInput () {
@@ -30,6 +31,9 @@ public class MasterScript : MonoBehaviour {
 	}
 	public int score = 0; 
 
+=======
+	public float cycleTime ; 
+>>>>>>> origin/master
 
 
 
@@ -50,6 +54,7 @@ public class MasterScript : MonoBehaviour {
 		for (int y = 0; y <  9; y++) {
 			for (int x = 0; x < 16;x++) { 
 			SpawnCube (x,y);
+<<<<<<< HEAD
 
 				}
 			}
@@ -97,5 +102,23 @@ public class MasterScript : MonoBehaviour {
 			}
 
 		}
+=======
+				if (ap1.x == x && ap1.y == y) {
+					AllCubes[x,y].GetComponent<Renderer> ().material = RedColor ;   
+
+				}
+			}
+		}
+	} 
+	
+	// Update is called once per frame
+	void Update () {
+		Time.deltaTime += cycleTime;
+		if ( cycleTime > turnTime ) {
+			MasterScript.ap1.Move(); 
+			cycleTime = 0; 
+
+	
+>>>>>>> origin/master
 	}
 }
