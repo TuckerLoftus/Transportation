@@ -49,6 +49,8 @@
      <Compile Include="Assets\CubeBehavior.cs" />
      <Compile Include="Assets\MasterScript.cs" />
      <Compile Include="Assets\airplane.cs" />
+     <Compile Include="Assets\boat.cs" />
+     <Compile Include="Assets\train.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
